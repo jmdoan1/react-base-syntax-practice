@@ -15,3 +15,4 @@ Added:
 
 - Clear button
 - Submit button (with placeholder function)
+- Use of children

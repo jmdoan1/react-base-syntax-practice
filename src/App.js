@@ -50,6 +50,7 @@ class App extends Component {
           message={this.state.message}
           changed={this.textChangedHandler}
           clearFunction={this.clearAll}
+          submitFunction={this.submitMessage}
         >ADD MESSAGE</UserInput>
         {/* <UserInput 
           label="Message"
