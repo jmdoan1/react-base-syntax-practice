@@ -1,0 +1,10 @@
+.UserInput {
+    margin: 5px;
+    border: 1px dashed red;
+    box-shadow: -2px -2px 7px red;
+    padding: 3px
+}
+
+.InputLine {
+    margin: 5px;
+}
