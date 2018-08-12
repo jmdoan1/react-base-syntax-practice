@@ -14,7 +14,7 @@ const userInput = (props) => {
                 <input
                     type="text"
                     onChange={props.changed}
-                    value={props.text}
+                    value={props.username}
                     name='username'
                 />
             </div>
@@ -23,9 +23,12 @@ const userInput = (props) => {
                 <input
                     type="text"
                     onChange={props.changed}
-                    value={props.text}
+                    value={props.message}
                     name='message'
                 />
+            </div>
+            <div style={style}>
+                <button onClick={props.clearFunction}>Clear!</button>
             </div>
         </div>
     )

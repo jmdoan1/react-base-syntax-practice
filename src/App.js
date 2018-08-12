@@ -22,6 +22,13 @@ class App extends Component {
     }
   };
 
+  clearAll = () => {
+    this.setState({
+      username: "",
+      message: ""
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -35,7 +42,10 @@ class App extends Component {
           message="Hey guys, what's up?"
         />
         <UserInput 
+          username={this.state.username}
+          message={this.state.message}
           changed={this.textChangedHandler}
+          clearFunction={this.clearAll}
         />
         {/* <UserInput 
           label="Message"
