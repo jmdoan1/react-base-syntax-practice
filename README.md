@@ -1,4 +1,4 @@
-Code practice with the following instrictions:
+Code practice with the following instructions:
 
 - Create TWO new components: UserInput and UserOutput
 - UserInput should hold an input element, UserOutput two paragraphs
