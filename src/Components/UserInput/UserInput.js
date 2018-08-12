@@ -8,7 +8,7 @@ const userInput = (props) => {
 
     return (
         <div className="UserInput">
-            <h4>Add a message</h4>
+            <h4>{props.children}</h4>
             <div style={style}>
                 <text>Username: </text>
                 <input
@@ -28,6 +28,7 @@ const userInput = (props) => {
                 />
             </div>
             <div style={style}>
+                <button onClick={props.submitFunction}>Submit!</button>
                 <button onClick={props.clearFunction}>Clear!</button>
             </div>
         </div>

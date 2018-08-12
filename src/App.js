@@ -29,6 +29,10 @@ class App extends Component {
     })
   }
 
+  submitMessage = () => {
+    console.log('Nothing to do here yet, try clearing')
+  }
+
   render() {
     return (
       <div className="App">
@@ -46,7 +50,7 @@ class App extends Component {
           message={this.state.message}
           changed={this.textChangedHandler}
           clearFunction={this.clearAll}
-        />
+        >ADD MESSAGE</UserInput>
         {/* <UserInput 
           label="Message"
           changed={this.textChangedHandler}
@@ -55,7 +59,7 @@ class App extends Component {
         <UserOutput
           username={this.state.username}
           message={this.state.message}
-        />
+        >PREVIEW</UserOutput>
       </div>
     );
   }
